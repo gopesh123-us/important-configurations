@@ -1,5 +1,6 @@
 # git-github
-List of important files
+
+List of important configuration files
 1. beans.xml -- initial Spring beans configuration
 2. git-ignore-sample -- .gitignore file for Java and Eclipse projects
 3. sample-web-app-xml.xml -- sample web application XML configuration
