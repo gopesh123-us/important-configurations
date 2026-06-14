@@ -1,9 +1,19 @@
 #!/bin/sh
 set -e
+# Personal install notes
+# Use the command below if you get WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED! 
+# ssh-keygen -R <IP Address of VPS>
+# Use the command below if you get an error. user@vps:~/scripts# ./docker-install.sh -bash: ./docker-install.sh: /bin/sh^M: bad interpreter: No such file or directory. 
+# The ^M error happens because your script was saved with Windows-style line endings (CRLF) instead of Linux-style line endings (LF). Linux cannot read the file properly because of hidden carriage return characters.
+# sed -i 's/\r$//' docker-install.sh
+# Change permissions
+#chmod +x /path/to/remote/destination/docker-install.sh
+# scp /temp/docker-install.sh myvps:/scripts/
+
 # Docker Engine for Linux installation script.
 #
 # This script is intended as a convenient way to configure docker's package
-# repositories and to install Docker Engine, This script is not recommended
+# repositories and to install Docker Engine. This script is not recommended
 # for production environments. Before running this script, make yourself familiar
 # with potential risks and limitations, and refer to the installation manual
 # at https://docs.docker.com/engine/install/ for alternative installation methods.
