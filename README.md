@@ -1,4 +1,4 @@
-# git-github
+# Table of Contents
 
 List of important configuration files
 1. beans.xml -- initial Spring beans configuration
