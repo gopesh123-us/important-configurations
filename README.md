@@ -8,4 +8,4 @@ List of important configuration files
 5. sublime-text-2.xml -- Sublime Text 2 color theme configuration
 6. application.properties -- Spring Boot application.properties sample settings for mysql server
 7. docker-install.sh - Docker install script for Linux servers
-8. 99-ssh-hardening.conf - for VPS security
+8. 99-ssh-hardening.conf - for VPS security in /etc/ssh/sshd_config.d/99-ssh-hardening.conf
